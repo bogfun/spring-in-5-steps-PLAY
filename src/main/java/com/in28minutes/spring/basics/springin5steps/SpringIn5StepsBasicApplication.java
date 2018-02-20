@@ -1,12 +1,12 @@
 package com.in28minutes.spring.basics.springin5steps;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Configuration;
 
 import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImpl;
 
-@SpringBootApplication
+@Configuration
 public class SpringIn5StepsBasicApplication {
 
 	public static void main(String[] args) {
