@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 // 2. Run the context
 @RunWith(SpringRunner.class)
 // 1. Load the context
-@ContextConfiguration(locations="/applicationContext.xml")
+@ContextConfiguration(locations="/testContext.xml")
 public class BinarySearchXmlConfigurationTest {
 
 	// 3. Get this beean from the context
