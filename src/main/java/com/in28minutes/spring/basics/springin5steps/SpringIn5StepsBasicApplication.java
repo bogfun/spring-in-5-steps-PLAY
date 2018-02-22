@@ -1,15 +1,16 @@
 package com.in28minutes.spring.basics.springin5steps;
 
+import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImpl;
 
-@Configuration
-@ComponentScan
+@RunWith(SpringRunner.class)
+@SpringBootApplication
 public class SpringIn5StepsBasicApplication {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(SpringIn5StepsBasicApplication.class);
