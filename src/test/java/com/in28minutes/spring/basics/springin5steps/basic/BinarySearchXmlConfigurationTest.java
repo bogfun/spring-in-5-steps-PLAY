@@ -8,13 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.spring.basics.springin5steps.SpringIn5StepsBasicApplication;
-
 // 2. Run the context
 @RunWith(SpringRunner.class)
 // 1. Load the context
-@ContextConfiguration(classes=SpringIn5StepsBasicApplication.class)
-public class BinarySearchTest {
+@ContextConfiguration(locations="/applicationContext.xml")
+public class BinarySearchXmlConfigurationTest {
 
 	// 3. Get this beean from the context
 	@Autowired

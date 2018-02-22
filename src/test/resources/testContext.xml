@@ -6,6 +6,13 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<import resource="classpath:applicationContext.xml" />
-	
+	<context:component-scan base-package="com.in28minutes.spring.basics" />
+
+	<bean id="xmlJdbcConnection" class="com.in28minutes.spring.basics.springin5steps.xml.XmlJdbcConnection">
+	</bean>
+
+	<bean id="xmlPersonDAO" class="com.in28minutes.spring.basics.springin5steps.xml.XmlPersonDAO">
+		<property name="xmlJdbcConnection" ref="xmlJdbcConnection" />
+	</bean>
+
 </beans>
